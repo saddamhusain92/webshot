@@ -2,7 +2,7 @@ const express = require('express');
 const puppeteer = require('puppeteer');
 
 const app = express();
-app.get('/',(res,req)=>{
+app.get('/',(req,res)=>{
     res.send({
         "Status":200
     })
