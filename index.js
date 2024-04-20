@@ -2,6 +2,11 @@ const express = require('express');
 const puppeteer = require('puppeteer');
 
 const app = express();
+app.get('/',()=>{
+    res.send({
+        "Status":200
+    })
+})
 app.get('/screen', async (req, res) => {
     const url = req.query.url;
     if (!url) {
